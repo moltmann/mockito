@@ -4,6 +4,7 @@ include 'testng'
 include 'extTest'
 include 'kotlinTest'
 include 'android'
+include 'androidTest'
 include 'junit-jupiter'
 include 'junitJupiterExtensionTest'
 

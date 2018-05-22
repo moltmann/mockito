@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId 'org.mockito.android'
+        minSdkVersion 9
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+}
+
+repositories {
+    google()
+}
+
+dependencies {
+    implementation project(":android")
+
+    androidTestImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+}
